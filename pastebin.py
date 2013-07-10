@@ -3,8 +3,8 @@ import urllib2
 import sublime, sublime_plugin
 import os.path
 
-HOSTNAME = 'http://i.ole.im'
-POST_FILE_FIELD = 'file'
+HOSTNAME = 'http://p.hashbang.ca'
+POST_FILE_FIELD = 'p'
 
 class Part:
 
@@ -65,7 +65,7 @@ class PastebinCommand(sublime_plugin.TextCommand):
         return name
 
     def run(self, view):
-    	global HOSTNAME, POST_FILE_FIELD
+        global HOSTNAME, POST_FILE_FIELD
 
         for region in self.view.sel():
 
